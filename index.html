@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>sujal</title>
+    <style>
+        header{
+            position: fixed;
+            width: 100%;
+            height: 92px;
+            background-color: white;
+            z-index: 9;
+        }
+        #signup{
+            position: absolute;
+            text-align: center;
+            width: 196px;
+            height: 50.81px;
+            left: 1174px;
+            top: 19px;
+            color: white;
+            padding-top: 12px;
+
+            background: #00A384;
+            border-radius: 32.6667px;
+
+        }
+        #blog{
+            background-image: url("Rectangle.png");
+
+            width: 100%;
+            height: 922px;
+            
+        }
+        #d1{
+          position: absolute;
+          top: 161px;
+          left: 1140px;
+          height: 221px;
+          opacity: 10%;
+        }
+        #d2{
+          position: absolute;
+          top: 161px;
+          left: 1323px;
+          height: 221px;
+          opacity: 10%;
+        }
+        #d3{
+          position: absolute;
+          top: 747px;
+          height: 145px;
+          left: -37px;
+          opacity: 10%;
+        }
+        #d4{
+          position: absolute;
+          top: 747px;
+          left: 83px;
+          opacity: 10%;
+          height: 145px;
+        }
+        #search{
+          position: absolute;
+          height: 47px;
+          width: 47px;
+          top: 642px;
+          left: 821px;
+          z-index: 5;
+        }
+        first_title{
+            position: absolute;
+            width: 130px;
+            height: 21px;
+            left: 96px;
+            top: 265px;
+
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            /* identical to box height, or 21px */
+
+            letter-spacing: 0.34em;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+        }
+        #t1{
+          color: #2CD182;
+
+        }
+        .t2{
+          color: #FFFFFF;
+        }
+        second_title{
+            position: absolute;
+            width: 893px;
+            height: 173px;
+            left: 96px;
+            top: 297px;
+
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 55px;
+            line-height: 61px;
+        }
+        third_title{
+            position: absolute;
+            width: 612px;
+            height: 56px;
+            left: 96px;
+            top: 502px;
+
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            /* or 156% */
+            color: #B1B1B1;
+        }
+        fourth_thing{
+            display: flex;
+            position: absolute;
+            top: 632px;
+            left: 96px;
+            right: 606px;
+        }
+        component_1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 18px 15px 38px;
+            gap: 107px;
+            left: 96px;
+            width: 322px;
+            height: 66px;
+
+            background: #FFFFFF;
+            border-radius: 46px;
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 5;
+        }
+        component_3{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 10px 15px 30px;
+            gap: 10px;
+
+            width: 221px;
+            height: 66px;
+
+            background: #FFFFFF;
+            border-radius: 46px;
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+        }
+        component_5{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px 15px 30px;
+            gap: 63px;
+
+            width: 241px;
+            height: 66px;
+
+            background: #FFFFFF;
+            border-radius: 46px;
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 4;
+            flex-grow: 0;
+        }
+        .dctr{
+          position: absolute;
+          width: 486px;
+          height: 501.03px;
+          left: 931px;
+          top: 421px;
+        }
+        features{
+            position: absolute;
+            width: 1473px;
+            height: 940px;
+            left: 0px;
+            top: 883px;
+
+            background: #F8F8F8;
+            
+        }
+        explore_feat{
+            position: absolute;
+            width: 248px;
+            height: 30px;
+            left: 96px;
+            top: 73px;
+
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 101.2%;
+            /* or 30px */
+
+
+            /* Secondary Colors/gray-headline */
+
+            color: #212529;
+        }
+        tag_feat{
+            color: #929292;
+;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            top: 100px;
+        }
+        box1{
+            box-sizing: border-box;
+
+                position: absolute;
+                width: 610.32px;
+                height: 542px;
+                left: 96px;
+                top: 178px;
+
+                background: #FFFFFF;
+                border: 1px solid #D1D1D1;
+                border-radius: 12px;
+        }
+        #tb1{
+          position: absolute;
+          width: 454px;
+          height: 83px;
+          left: 52.52px;
+          top: 278px;
+
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 28px;
+          /* or 125% */
+
+
+          color: #000000;
+        }
+        #tb2{
+          position: absolute;
+          width: 454px;
+          height: 83px;
+          left: 52.52px;
+          top: 337px;
+          color: #B1B1B1;
+        }
+        #knowmoreinfeature{
+          position: absolute;
+width: 77px;
+height: 28px;
+left: 67px;
+top: 167px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 28px;
+/* identical to box height, or 187% */
+
+
+color: #FFFFFF;
+        }
+        box2{
+            box-sizing: border-box;
+
+            position: absolute;
+            width: 610.32px;
+            height: 542px;
+            left: 734.68px;
+            top: 178px;
+
+            background: #FFFFFF;
+            border: 1px solid #D1D1D1;
+            border-radius: 12px;
+        }
+        #stats{
+            background: #004D79;
+            width: 100%;
+            height: 358px;
+            position: absolute;
+            top: 1735px;
+        }
+        .stats_title{
+          
+          position: absolute;
+          color: #FFFFFF;
+          left: 472px;
+          
+          top: 64px;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-size: 48px;
+          font-weight: 800;
+          line-height: 64px;
+
+          /* Inside auto layout */
+
+          
+        }
+        #stats_tag{
+          position: absolute;
+          color: #FFFFFF;
+          top: 126px;
+          width: 730px;
+          height: 32px;
+          left: 517px;
+          font-weight: 400;
+          font-size: 18px;
+
+          
+        }
+        #why_us{
+            position: absolute;
+            top: 2118px;
+            width: 100%;
+            height: 498px;
+            background: #FFFFFF;
+            
+        }
+        #why_us_btn{
+          background-color: #004D79;
+          position: absolute;
+            text-align: center;
+            width: 216px;
+            height: 56px;
+            left: 77px;
+            top: 300px;
+            padding-left: 55px;
+            padding-top: 15px;
+            
+            
+            color: white;
+            
+
+            
+            border-radius: 32.6667px;
+        }
+        #footr_btn{
+          position: absolute;
+          background-color: #000000;
+          color: #FFFFFF;
+          width: 206px;
+          height: 69px;
+          left: 390px;
+          top: 215px;
+          padding-left: 28px;
+          padding-top: 20px;
+          border-top-right-radius: 6.58px;
+          border-bottom-right-radius: 6.58px;
+          
+        }
+        #grn_know{
+          background: #00A384;
+
+          position: absolute;
+            text-align: center;
+            width: 216px;
+            height: 56px;
+            left: 53px;
+            top: 433px;
+            padding-left: 55px;
+            padding-top: 15px;
+            
+            
+            color: white;
+            
+
+            
+            border-radius: 32.6667px;
+        }
+        #blu_know{
+          background: #004D79;
+
+
+          position: absolute;
+            text-align: center;
+            width: 216px;
+            height: 56px;
+            left: 53px;
+            top: 433px;
+            padding-left: 55px;
+            padding-top: 15px;
+            
+            
+            color: white;
+            
+
+            
+            border-radius: 32.6667px;
+        }
+        #why_us_ttl{
+          position: absolute;
+          top: 90px;
+          left: 630px;
+        }
+        #why_us2{
+            position: absolute;
+            width: 1498px;
+            height: 502px;
+            left: -25px;
+            top: 2635px;
+
+            background: #F8F8F8;
+        }
+        #boxesofuses{
+          position: absolute;
+          top: 20px;
+          left: 80px;
+        }
+        #benefits{
+          position: absolute;
+          height: 617px;
+          width: 100%;
+          top: 3137px;
+          background: #F8F8F8;
+        }
+        #benfit{
+          font-size: small;
+
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          /* identical to box height, or 21px */
+
+          letter-spacing: 0.34em;
+
+          color: #000000;
+        }
+        #testinomials{
+          position: absolute;
+          top: 3754px;
+          width: 100%;
+          height: 680px;
+          
+          background: #00A284;
+
+        }
+        test_title{
+          display: flex;
+          position: absolute;
+          width: 1110px;
+          height: 64px;
+          left: 165px;
+          top: 99px;
+          justify-content: center;
+
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 800;
+          font-size: 48px;
+          line-height: 64px;
+          /* identical to box height, or 133% */
+
+          text-align: center;
+          font-feature-settings: 'liga' off;
+
+          color: #FFFFFF;
+
+
+          /* Inside auto layout */
+
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+        }
+        test_tag{
+          display: flex;
+          position: absolute;
+          width: 1110px;
+          height: 32px;
+          left: 165px;
+          top: 159px;
+          justify-content: center;
+
+          /* Lead / Lead 1 */
+
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          /* identical to box height, or 178% */
+
+          text-align: center;
+          font-feature-settings: 'liga' off;
+
+          color: #F3F3F3;
+
+
+          /* Inside auto layout */
+
+          flex: none;
+          order: 1;
+          align-self: stretch;
+          flex-grow: 0;
+        }
+        .testicontainer{
+          position: absolute;
+          top: 255px;
+          height: 544px;
+          width: 100%;
+          
+          display: flex;
+          justify-content: center;
+        }
+        
+        .itemtesti{
+          position: relative;
+          top: 38px;
+          text-align: center;
+          width: 350px;
+          height: 248px;
+          border-radius: 10px;
+          background-color: white;
+          border: 2px solid green;
+          margin: 10px;
+          padding: 3px;
+          color: #212529;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+
+        }
+        .boxtitle{
+          position: absolute;
+          top: 292.5px;
+          left: 10px;
+        }
+        #item_tag{
+          position: relative;
+          top: 80px;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #495057;
+        }
+        #item_title{
+          position: relative;
+          top: 38px;
+        }
+        #client1{
+          position: absolute;
+          top: 518px;
+          left: 322px;
+        }
+        #client2{
+          position: absolute;
+          top: 518px;
+          left: 700px;
+        }
+        #client3{
+          position: absolute;
+          top: 518px;
+          left: 1065px;
+        }
+        #client_name{
+          position: absolute;
+          width: 256px;
+          left: -10px;
+
+        }
+        .clients{
+          position: absolute;
+          
+          top: 575px;
+          width: 256px;
+          height: 28px;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          color: #FFFFFF;
+        }
+        #cn1{
+          left: 303px;
+        }
+        #cn2{
+          left: 684px;
+        }
+        #cn3{
+          left: 1046px;
+        }
+        .client_company{
+          position: absolute;
+          width: 256px;
+          height: 24px;
+          top: 600px;
+          
+          /* Body / Body 2 */
+          color: #CDCDCD;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+        }
+        #cnb1{
+          left: 286px;
+        }
+        #cnb2{
+          left: 661px;
+        }
+        #cnb3{
+          left: 1027px;
+        }
+        #footr{
+          border: solid black 2px;
+          position: absolute;
+          top: 4434px;
+          width: 100%;
+          height: 1250px;
+          bottom: 100px;
+          background-color: #000000;
+        }  
+        #news{
+          position: absolute;
+          width: 1319px;
+          height: 399px;
+          left: 61px;
+          top: 95px;
+
+          background: #004D79;
+          border-radius: 16px;
+        }
+        #footer_container{
+          position: absolute;
+          top: 530px;
+          
+          left: 106px;
+        }
+        
+        #i1border{
+          position: absolute;
+          top: 200px;
+          left: 124px;
+          z-index: 5;
+        }
+        #i2border{
+          position: absolute;
+          top: 235px;
+          left: 788px;
+          z-index: 5;
+        }
+        #subscribe{
+
+          position: absolute;
+          left: 64px;
+          top: 95px;
+          font-family: 'Manrope';
+          font-style: normal;
+          color: #FFFFFF;
+          font-size:42px;
+          font-weight: 800;
+
+        }
+        #footr_tag{
+          position: absolute;
+          left: 64px;
+          top: 153px;
+          height: 32px;
+          font-size: 18px;
+          font-weight: 400;
+          color: #FFFFFF;
+        }
+        #footr_mail{
+          position: absolute;
+          left: 64px;
+          top:215px;
+          width: 326px;
+          height: 69px;
+          font-size: medium;
+          border-top-left-radius: 6.58px;
+          border-bottom-left-radius: 6.58px;
+        }
+        #mail{
+          position: absolute;
+          left: 935px;
+          top: 115px;
+        }
+        #letter{
+          position: absolute;
+          top: 125px;
+          left: 1054px;
+        }
+        #ig{
+          position: absolute;
+          left: 5px;
+          top: 170px;
+        }
+        #twitter{
+          position: absolute;
+          top: 170px;
+          left: 74px;
+        }
+        #youtube{
+          position: absolute;
+          top: 170px;
+          left: 149px;
+        }
+        #tick1{
+          width: 40px;
+          height: 40px;
+        }
+        #tick2{
+          width: 40px;height: 40px;
+        }
+        #tick3{
+          width: 40px;height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">                   
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          </a>
+          <img src="kmn.png" alt="sujal">
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a href="http://127.0.0.1:5500/1.html" class="mr-5 hover:text-white">HOME</a>
+            <a class="mr-5 hover:text-gray-900">SERVICES</a>
+            <a class="mr-5 hover:text-gray-900">EXPLORE</a>
+            <a class="mr-5 hover:text-gray-900">ABOUT US</a>
+          </nav>
+          <a href="login.html" class="mr-5 hover" id="signup">LOGIN/SIGNUP</a>
+        </div>
+    </header>
+
+    <section class="text-gray-600 body-font" id="blog">
+       
+      <img src="Vector 5.png" alt="" id="d1">
+      <img src="Vector 6.png" alt="" id="d2">
+
+      <img src="Vector 5.png" alt="" id="d3">
+      <img src="Vector 6.png" alt="" id="d4">
+      <first_title>DOCTOCLICK</first_title>
+      
+      <second_title><div id="t1">Book A Physical Or Video</div> <div class="t2">consultation with a healthcare</div> <div class="t2">professional</div></second_title>
+        
+
+      <third_title>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod aliquam tempor et elit tristique at volutpat in ut.</third_title>
+      
+      
+      <input type="image" src="Frame 11.png" alt="" id="search">
+        <fourth_thing>
+            <component_1>
+               <div><input type="text" name="" id="" placeholder="ENTER YOUR NAME"></div> 
+                <div><input type="text" name="" id="" placeholder="ENTER YOUR SPECIALLITY"></div>
+            </component_1>
+            <component_3>
+              <div><input type="text" name="" id="" placeholder="Add your location"></div>
+            </component_3>
+            <component_5>
+              <div><input type="date" name="" id="" placeholder="ENTER DATE FOR APPOINTMENT"></div>
+            </component_5>
+            
+        </fourth_thing>
+
+        <img src="image 1.png" alt="" class="dctr">
+        
+        
+    </section>
+
+    <features>
+      <img src="presc.png" alt="" id="i1border">
+      <img src="vc.png" alt="" id="i2border">
+      
+        <explore_feat>Explore Features
+            <tag_feat>Here is the features Of Our App</tag_feat>
+        </explore_feat><br>
+        <box1>
+            <textinbox1 id="tb1">Share your prescriptions simply in<br>pharmacies with the Doctolib app
+            </textinbox1>
+            <textinbox2 id="tb2">Here you can download the prescription from our app and show it to your dispensary digitally</textinbox2>
+            <a href="https://tailwindcss.com/docs/padding">
+              <button class="inline-flex text-white bg-indigo-500 border-0  focus:outline-none hover: rounded text-lg" id="grn_know">Know More</button>
+            </a>
+          </box1>
+        <box2>
+          <textinbox1 id="tb1">Video consultation: quick access to your<br>doctor and reimbursement like in the office
+          </textinbox1>
+          <knowmore id="km1"></knowmore>
+          <a href="www.google.com" class="mr-5 hover" id="knowmoreinfeature">Know More</a>
+          
+          <textinbox2 id="tb2">Here you can quickly access the assigned doctor and can get all your reports at one place</textinbox2>
+          <a href="https://tailwindcss.com/docs/padding">
+            <button class="inline-flex text-white bg-indigo-500 border-0  focus:outline-none hover: rounded text-lg" id="blu_know">Know More</button>
+          </a>
+        </box2>
+    </features>
+
+    <section class="text-gray-600 body-font" id="stats">
+      <div class="stats_title">Some count that matters</div>
+      <div id="stats_tag">Our achievement in the journey depicted in numbers</div>
+        <div class="container px-5 pt-48 mx-auto">
+          <div class="flex flex-wrap -m-4 text-center">
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">5</h2>
+              <p class="leading-relaxed">Service Geographics</p>
+            </div>
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">3</h2>
+              <p class="leading-relaxed">Fortune 500 Clients</p>
+            </div>
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">300</h2>
+              <p class="leading-relaxed">Dedicated Members</p>
+            </div>
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">8</h2>
+              <p class="leading-relaxed">Years of journey</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-600 body-font" id="why_us">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="Contato-section-2.png">
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center" id="why_us_ttl">
+            <h1 class="title-font sm:text-4xl text-3xl font-medium text-gray-900 ">Why Use DoctoClick ?<br>
+        
+            </h1>
+            <ul>
+              <br><li style="list-style: disc;" ;>Free up medical time with online appointment booking and modern software</li><br>
+              <li style="list-style: disc;" ;>Develop your firm's business according to your needs thanks to better online visibility</li><br>
+              <li style="list-style: disc;" ;>Gain daily working comfort by reducing phone calls to your office</li><br>
+              <li style="list-style: disc;" ;>Improve access to care for your patients by providing them with the best experiences</li>
+              
+            </ul>
+      
+            <div class="flex justify-center">
+              <a href="https://tailwindcss.com/docs/padding">
+              <button actio class="inline-flex text-white bg-indigo-500 border-0  focus:outline-none hover: rounded text-lg" id="why_us_btn">Know More</button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-600 body-font" id="why_us2">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1 color: #00856F">SERVIÇOS</h2>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Why use doctoclick ?</h1>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/3">
+              <div class="flex rounded-lg h-full bg-white border-2 p-8 flex-col">
+                <img src="Group 2.png" alt="" id="tick1">
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">
+                    <h2><strong>Problemas digestivos</strong> </h2>
+                    <ul>
+                    <li style="list-style:disc;">Quickly access the availability of all your healthcare professionals</li></ul></p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="flex rounded-lg h-full bg-white border-2 p-8 flex-col">
+                
+                  <img src="Group 2.png" alt="" id="tick2">
+                  
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">
+                    <h2><strong>Saude Hormonal</strong></h2>
+                    <ul><li style="list-style: disc;">Make informed decisions tailored to your health needs</li></ul>
+                    </p>
+              
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="flex rounded-lg h-full bg-white border-2 p-8 flex-col">
+                <img src="Group 2.png" alt="" id="tick3">
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">
+                    <h2><strong>Bem-estar-mental</strong></h2>
+                    <ul><li style="list-style: disc;">
+                      Manage your appointments and health documents as well as those of your loved ones on the same application</li></ul></p>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>        
+
+
+      <section class="text-gray-600 body-font" id="benefits">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h6 id="benfit">BENEFITS</h6>
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Doctoclick at the
+              <br class="hidden lg:inline-block">service of your health
+            </h1>
+            <p class="mb-8 leading-relaxed">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="bro.png">
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-600 body-font" id="testinomials">
+        <test_title>Our Clients Speak</test_title>
+        <test_tag>We have been working with clients around the world</test_tag>
+        <div class="testicontainer">
+          <div class="itemtesti">
+            <p id="item_title">Easy To Use</p>
+            <p id="item_tag">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
+          </div>
+            
+          <div class="itemtesti">
+            <p id="item_title">Intuitive Design</p>
+            <p id="item_tag">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
+          </div>
+          
+          <div class="itemtesti">
+            <p id="item_title">Mindblowing Service</p>
+            <p id="item_tag">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
+          </div>
+          
+        </div>
+        
+        <img src="Picture.png" alt="" id="client1">
+        <cn class="clients" id="cn1">Jane Cooper</cn>
+        <cnb class="client_company" id="cnb1">CEO at ABC Corporation</cnb>
+        <img src="Picture.png" alt="" id="client2">
+        <cn class="clients" id="cn2">Jane Cooper</cn>
+        <cnb class="client_company" id="cnb2">CEO at ABC Corporation</cnb>
+        <img src="Picture.png" alt="" id="client3">
+        <cn class="clients" id="cn3">Jane Cooper</cn>
+        <cnb class="client_company" id="cnb3">CEO at ABC Corporation</cnb>
+      
+      </section>        
+   
+      <footer class="text-gray-600 body-font" id="footr">
+        <div id="news">
+        <p id="subscribe">Subscribe For News Letter</p>
+        <p id="footr_tag">Our achievement in the journey depicted in numbers</p>
+
+        <input type="email" name="" id="footr_mail" placeholder="      Your work email address">
+        <a href="https://tailwindcss.com/docs/padding">
+          <button class="inline-flex text-white bg-indigo-500 border-0  focus:outline-none hover: rounded text-lg" id="footr_btn">Join The Waitlist</button>
+        </a>
+
+        <img src="Mailbox.png" alt="" id="mail">
+        <img src="Group 333.png" alt="" id="letter" >
+        </div>
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col" id="footer_container">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <img src="Group 337.png" alt="">
+            </a>
+            <a href=""><img src="Instagram.png" alt="" id="ig"></a>
+            <a href=""><img src="Twitter.png" alt="" id="twitter"></a>
+            <a href=""><img src="Youtube.png" alt="" id="youtube"></a>
+            
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">PRODUCT</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Vaccination Covid 19</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Covid Test Screening</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Test PCR</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Press</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Careers</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>About Us</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Need Help ?</a>
+                </li>
+
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">FIND YOUR SPECIALIST</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>General practitioner</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Pediatrician</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Medical and obstetric gynecologist</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Ophthalmologist</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Dermatologist and venereologist</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Osteopath</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Masseur-physiotherapist</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Optician-eyewear</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Pedicure-podiatrist</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Contact</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Partners</a>
+                </li>
+                
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUPPORT</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Help Center</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Terms of service</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Legal</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Privacy Policy</a>
+                </li>
+                <li>
+                  <a class="text-white hover:text-gray-800"><br>Status</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+
+      
+
+</body>
+</html>

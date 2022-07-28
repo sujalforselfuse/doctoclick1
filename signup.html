@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <style>
+    #rear{
+      position: relative;
+      width: 1440px;
+      height: 1024px;
+
+      background: #FFFFFF;
+    }
+    #left{
+      position: absolute;
+      width: 702px;
+      height: 1126px;
+      left: -65px;
+      top: -64px;
+      background: #002E48;
+    }
+    #logo{
+      position: absolute;
+      left: 156px;
+      top: 102px;
+    }
+    #pre{
+      position: absolute;
+      top: 240px;
+      left: 183px;
+    }
+    #descr{
+      position: absolute;
+      color: white;
+      z-index: 5;
+      top: 600px;
+      left: 132px;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      
+    }
+    #details{
+      position: absolute;
+      top: 670px;
+      color: rgba(255, 255, 255, 0.68);
+      left: 132px;font-family: 'Manrope';
+      font-style: normal;
+      width: 499px;
+      height: 47px;
+      font-weight: 400;
+      font-size: 15px;
+    }
+    #knowbtn{
+      background-color: #FFFFFF;
+          position: absolute;
+            text-align: center;
+            width: 216px;
+            height: 56px;
+            left: 132px;
+            top: 755px;
+            padding-left: 10px;
+            padding-top: 3px;
+            font-size: medium;
+            
+            
+            color:  #00A284;
+
+            
+
+            
+            border-radius: 32.6667px;
+    }
+    #signup{
+      position: absolute;
+            text-align: center;
+            width: 196px;
+            height: 50.81px;
+            left: 1174px;
+            top: 22px;
+            color: white;
+            padding-top: 12px;
+
+            background: #00A384;
+            border-radius: 32.6667px;
+    }
+    #greet{
+      position: absolute;
+      width: 409px;
+      height: 39px;
+      left: 754px;
+      top: 80px;
+      color: #333333;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 36px;
+    }
+    #greet_tag{
+      position: absolute;
+      width: 169px;
+      height: 15px;
+      left: 756px;
+      top: 196px;
+
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 15px;
+      /* identical to box height, or 150% */
+
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+
+      color: #3D3D3D;
+    }
+    #mail{
+      box-sizing: border-box;
+
+      position: absolute;
+      width: 592px;
+      height: 62px;
+      left: 754px;
+      top: 224px;
+
+      border: 2px solid rgba(169, 169, 169, 0.28);
+      border-radius: 16px;
+    }
+    #conmail{
+        
+      box-sizing: border-box;
+
+position: absolute;
+width: 592px;
+height: 62px;
+left: 754px;
+top: 300px;
+
+border: 2px solid rgba(169, 169, 169, 0.28);
+border-radius: 16px;
+    }
+    #pswd{
+      box-sizing: border-box;
+
+      position: absolute;
+      width: 592px;
+      height: 62px;
+      left: 754px;
+      top: 461px;
+
+      border: 2px solid rgba(169, 169, 169, 0.28);
+      border-radius: 16px;
+
+    }
+    #submitbtn{
+      position: absolute;
+      width: 590px;
+      height: 40px;
+      left: 756px;
+      top: 528px;
+
+      background: #00A284;
+      border-radius: 16px;
+    }
+    #fb{
+      box-sizing: border-box;
+
+        position: absolute;
+        width: 590px;
+        height: 59px;
+        left: 754px;
+        top: 584px;
+
+        background: #FFFFFF;
+        border: 2px solid #E5F2F8;
+        border-radius: 14px;
+    }
+    #google{
+      box-sizing: border-box;
+
+        position: absolute;
+        width: 590px;
+        height: 59px;
+        left: 754px;
+        top: 659px;
+
+        background: #FFFFFF;
+        border: 2px solid #E5F2F8;
+        border-radius: 14px;
+
+    }
+    #create{
+      position: absolute;
+      width: 194px;
+      height: 18px;
+      left: 953px;
+      top: 740px;
+
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13.5px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #333333;
+    }
+    #alter{
+      color: #00A284;
+    }
+    #date{
+        box-sizing: border-box;
+
+position: absolute;
+width: 592px;
+height: 62px;
+left: 754px;
+top: 380px;
+
+border: 2px solid rgba(169, 169, 169, 0.28);
+border-radius: 16px;
+
+    }
+    #googlelogo{
+        position: relative;
+        top: 7px;
+        left: -15px;
+
+    }
+    #fblogo{
+        position: relative;
+        top: 7px;
+        left: -15px;
+
+    }
+  </style>
+</head>
+<body>
+  <section id="rear">
+    <left id="left">
+    <img src="Group 337.png" alt="" id="logo">
+    <img src="pre2.png" alt="" id="pre">
+    <p id="descr">Share your prescriptions simply in pharmacies with the Doctolib app</p>
+    <p id="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod aliquam tempor et elit tristique at volutpat in ut.</p>
+    <a href="https://tailwindcss.com/docs/padding">
+      <button class="inline-flex text-white bg-indigo-500 border-0  focus:outline-none hover: rounded text-lg" id="knowbtn">Know More</button>
+    </a>
+    </left>
+    <p id="greet">New Here? lets's set up your account</p>
+    <p id="greet_tag">OR SIGNUP WITH EMAIL</p>
+    <input type="email" name="" id="mail" placeholder="EMAIL">
+    <input type="email" name="" id="conmail" placeholder="CONFIRM EMAIL">
+    <input type="date" name="" id="date" placeholder="BIRTH DATE">
+    <input type="password" name="" id="pswd" placeholder="ADD PASSWORD">
+    <button type="submit" id="submitbtn">Sign Up</button>
+  </section>
+  <a href="login.html" class="mr-5 hover" id="signup" >LOGIN/SIGNUP</a>
+  
+  
+  <a href=""><button type="submit" id="fb">
+    <img src="fb.png" alt="" iD="fblogo">CONTINUE WITH FACEBOOK
+  </button></a>
+  <a href=""><button type="submit" id="google">
+    <img src="google.png" alt="" id="googlelogo">CONTINUE WITH GOOGLE
+  </button></a>
+  <p id="create">Already have an acoount ?  <a href="login.html" id="alter">LOGIN</a></p>
+</body>
+</html>
